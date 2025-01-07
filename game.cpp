@@ -49,7 +49,6 @@ void diceRoll(){
             while (reroll) {
                 dice = generateNumber();
                 cout << ptr->name << " has obtained ---> " << dice << std::endl;
-    
                 if (dice == 6) {
                     int skip= 0;
                     cout << ptr->name << ", it's 6! Enter 1 to Reroll & 0 to skip " << endl;
@@ -74,42 +73,10 @@ void diceRoll(){
     }
 }
 
-
-// void startGame() {
-//     int i = 0;
-//     int dice = 0;
-
-//     while (i < 4) { 
-//         ptr = start;
-
-//         while (ptr != NULL) {
-//             bool reroll = true;
-
-//             while (reroll) {
-//                 dice = generateNumber();
-//                 cout << ptr->name << " has obtained --->" << dice << std::endl;
-
-//                 if (dice == 6) {
-//                     std::cout << "It's 6! Time to reroll for " << ptr->name << std::endl;
-//                 } else {
-//                     ptr->total += dice;
-//                     reroll = false;
-//                 }
-//             }
-
-//             ptr = ptr->next;
-//         }
-
-//         i++;
-//     }
-// }
-
-
 void scorecard(struct player *ptr) {
     cout << ptr->name << "\t\t\t\t" << ptr->total << endl;
     if (ptr->next != NULL)
         scorecard(ptr->next);
-    
 }
 
 void winner(){
@@ -127,7 +94,6 @@ void winner(){
 }
 
 int main() { 
-    
     int numberOfPlayers=0;
     int gameRound=0;
     int i=0;
