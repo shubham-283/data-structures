@@ -1,4 +1,22 @@
 //Game
+
+/*
+created by SHUBHAM
+
+This game requires multiple players.
+
+FOR CONTESTANT:
+-> Enter the total number of players
+-> Enter name of each player
+-> Provide the total number of game rounds you guys want to play.
+-> Now you are ready to play this game.
+
+RULES:
+1. Every player will get equal equal number of chance.
+2. If any player gets 6 on the dice he/she will get a second chance to roll the dice or they can simply skip their chance.
+3. Scoring is based on the sum of numbers appeared on dice by each player in every round.
+*/
+
 #include <iostream>
 #include <cstdlib>
 #include <string>
